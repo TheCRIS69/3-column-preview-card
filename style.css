@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+     
+     /* COLORS */
+
+    --clr-primary-bright-orange: hsl(31, 77%, 52%);
+    --clr-primary-dark-cyan: hsl(184, 100%, 22%);
+    --clr-primary-verydark-cyan: hsl(179, 100%, 13%);
+
+    --clr-neutral-transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --clr-neutral-verylight-gray: hsl(0, 0%, 95%);  /* background, headings, buttons */
+
+    /* FONT */
+
+    --ff-paragraphs: 'Lexend Deca', sans-serif;
+    --ff-headings: 'Big Shoulders Display', cursive;
+    
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -22,3 +43,86 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
+
+body {
+    background-color: var(--clr-neutral-verylight-gray);
+}
+
+
+
+.cars-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+
+}
+
+
+.sedans-cars, .suvs-cars, .luxury-cars {
+    flex-basis: 300px;
+    height: 500px;
+    padding: 3.12rem;
+}
+
+
+.sedans-cars {
+    background-color: var(--clr-primary-bright-orange);
+}
+.sedans-cars .button {
+    color: var(--clr-primary-bright-orange);
+}
+
+
+.suvs-cars {
+    background-color: var(--clr-primary-dark-cyan);
+}
+.suvs-cars .button {
+    color: var(--clr-primary-dark-cyan);
+}
+
+
+.luxury-cars {
+    background-color: var(--clr-primary-verydark-cyan);
+}
+.luxury-cars .button {
+    color: var(--clr-primary-verydark-cyan);
+}
+
+
+.cars-section__name {
+    font-family: var(--ff-headings);
+    color: var(--clr-neutral-verylight-gray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+
+.cars-section__description {
+    font-family: var(--ff-paragraphs);
+    color: var(--clr-neutral-transparent-white);
+    font-size: .902rem;
+    line-height: 1.8;
+}
+
+.button {
+    background-color: var(--clr-neutral-verylight-gray);
+    width: 144px;
+    font-family: var(--ff-paragraphs);
+    border: 2px solid var(--clr-neutral-verylight-gray);
+    border-radius: 1.5rem;
+    padding: 0.6rem;
+    cursor: pointer;
+    margin-top: 5rem;
+}
+
+.button:is(:hover, :active) {
+    background-color: inherit;
+    color: var(--clr-neutral-verylight-gray);
+}
+
+
+
+
+
