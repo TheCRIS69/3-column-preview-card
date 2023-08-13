@@ -44,21 +44,20 @@
     overflow-wrap: break-word;
   }
 
+
+
 body {
     background-color: var(--clr-neutral-verylight-gray);
+
 }
 
-
-
 .cars-section {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
-
 }
-
 
 .sedans-cars, .suvs-cars, .luxury-cars {
     flex-basis: 300px;
@@ -117,12 +116,7 @@ body {
     margin-top: 5rem;
 }
 
-.button:is(:hover, :active) {
+.button:hover {
     background-color: inherit;
     color: var(--clr-neutral-verylight-gray);
 }
-
-
-
-
-
